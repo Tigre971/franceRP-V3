@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme de Sondages et Avis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sondages et Avis</h1>
+            <nav>
+                <ul>
+                    <li><a href="#create">Créer un Sondage</a></li>
+                    <li><a href="#browse">Parcourir les Sondages</a></li>
+                    <li><a href="#feedback">Donner votre Avis</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Bienvenue sur notre Plateforme</h2>
+            <p>Participez à des sondages, partagez votre avis et explorez les opinions des autres utilisateurs.</p>
+            <a href="#create" class="btn">Créer un Sondage</a>
+        </div>
+    </section>
+
+    <section id="create">
+        <div class="container">
+            <h2>Créer un Sondage</h2>
+            <form action="#" method="post">
+                <label for="title">Titre du Sondage :</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="question">Question :</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+
+                <label for="options">Options (une par ligne) :</label>
+                <textarea id="options" name="options" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Soumettre</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="browse">
+        <div class="container">
+            <h2>Parcourir les Sondages</h2>
+            <div class="poll-list">
+                <article class="poll">
+                    <h3>Sondage Exemple 1</h3>
+                    <p>Que préférez-vous, thé ou café ?</p>
+                    <a href="#" class="btn">Participer</a>
+                </article>
+                <article class="poll">
+                    <h3>Sondage Exemple 2</h3>
+                    <p>Quelle est votre couleur préférée ?</p>
+                    <a href="#" class="btn">Participer</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback">
+        <div class="container">
+            <h2>Donner votre Avis</h2>
+            <form action="#" method="post">
+                <label for="name">Votre Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="opinion">Votre Avis :</label>
+                <textarea id="opinion" name="opinion" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Plateforme de Sondages et Avis. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
